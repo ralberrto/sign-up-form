@@ -85,7 +85,6 @@ body {
 }
 
 .form-field input {
-    position: relative;
     appearance: none;
     border: 1px solid #555555;
     border-radius: 5px;
@@ -99,10 +98,6 @@ body {
     border: 1px solid #ad0104;
 }
 
-form div {
-    display: inline-block;
-}
-
 #submit {
     flex: 0.2;
 }
@@ -113,8 +108,9 @@ form div {
     padding: 1em;
     background-color: #333333;
     color: white;
-    border: 2px solid #ffffffff;
+    border: 2px solid #333333;
     border-radius: 0.3em;
+    cursor: pointer;
 }
 
 #submit button:hover {
