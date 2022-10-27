@@ -96,6 +96,7 @@ body {
 
 .form-field input:focus {
     outline: 1px solid #ad0104;
+    border: 1px solid #ad0104;
 }
 
 form div {
