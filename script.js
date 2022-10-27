@@ -17,7 +17,11 @@ function setValidity() {
             x.classList.remove("no-error");});
     }
     else if (!anyPasswdsEmpty() && arePasswdsEqual()) {
-        [passwdA, passwdB].map(x => x.className = "no-error")
+        [passwdA, passwdB].map(x => {
+            x.className = "no-error";
+            x.setCustomValidity("");
+            }
+        );
     }
     else {
         [passwdA, passwdB].map(x => {
