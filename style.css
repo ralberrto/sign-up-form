@@ -98,8 +98,30 @@ body {
     border: 1px solid #ad0104;
 }
 
-.form-field input.error {
+.form-field input.error, 
+.form-field input.not-empty:invalid {
     background-color: #ad010433;
+}
+
+.form-field input.no-error, 
+.form-field input.not-empty:valid {
+    background-color: #00911033;
+}
+
+.form-field input.no-error:focus {
+    outline: 1px solid #009110;
+    border: 1px solid #009110;
+}
+
+.form-field input.ff-common:valid {
+    outline: 1px solid #009110;
+    border: 1px solid #009110;
+}
+
+.form-field input.not-empty:valid:focus {
+    background-color: #00911033;
+    outline: 1px solid #009110;
+    border: 1px solid #009110;
 }
 
 #submit {
