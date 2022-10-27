@@ -1,0 +1,168 @@
+@font-face {
+    font-family: "Norse Bold";
+    src: url(./Norse-Bold.otf);
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+#logo-cont {
+    display: flex;
+    position: relative;
+}
+
+#content-cont {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#content-cont > div {
+    padding: 20px 40px;
+}
+
+#info-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex: 0.3;
+    background-color: #eeeeee;
+    font-weight: bold;
+    font-size: medium;
+}
+
+#info-cont > p {
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-size: 20px;
+    line-height: 1.3em;
+    width: 80%
+}
+
+#form-cont {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    flex: 0.5;
+    box-shadow: 0 2px 5px gray;
+}
+
+#form-cont form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.form-row {
+    display: flex;
+    margin-right: 80px;
+    flex: 1;
+}
+
+.form-field {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+#form-cont p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 48px;
+}
+
+.form-field label {
+    font-size: 14px;
+    color: #555555;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 520;
+    margin-bottom: 0.5em;
+}
+
+.form-field input {
+    position: relative;
+    appearance: none;
+    border: 1px solid #555555;
+    border-radius: 5px;
+    width: 260px;
+    padding: 10px 20px;
+    outline: none;
+}
+
+.form-field input:focus {
+    outline: 1px solid #ad0104;
+}
+
+form div {
+    display: inline-block;
+}
+
+#submit {
+    flex: 0.2;
+}
+
+#submit button {
+    box-sizing: border-box;
+    font-size: large;
+    padding: 1em;
+    background-color: #333333;
+    color: white;
+    border: 2px solid #ffffffff;
+    border-radius: 0.3em;
+}
+
+#submit button:hover {
+    color: black;
+    background-color: white;
+    border: 2px solid#333333;
+}
+
+#submit button:active {
+    color: white;
+    background-color: #777777;
+}
+
+#submit a {
+    color: black;
+    font-weight: bold;
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    font-family: "Norse Bold";
+    background-color: #333333aa;
+    width: 100%;
+    top: 5%;
+}
+
+#logo > h1 {
+    font-size: 60px;
+}
+
+#bckgnd-credit {
+    display: flex;
+    position: absolute;
+    align-self: flex-end;
+    justify-content: center;
+    width: 100%;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+    font-weight: bold;
+}
+
+#bckgnd-credit a {
+    color: black;
+}
+
+img {
+    height: 100vh;
+    z-index: -1;
+}

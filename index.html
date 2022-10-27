@@ -8,6 +8,72 @@
     <title>Sign-up now</title>
 </head>
 <body>
-    
+    <div id="logo-cont">
+        <div id="logo">
+            <h1>
+                SOFIA VARGAS
+            </h1>
+        </div>
+        <div id="bckgnd-credit">
+            <p>
+                Photo by <a href="https://unsplash.com/@rubenev520">Ruben Valenzuela</a> on
+                <a href="https://unsplash.com/photos/6-KGYUuvc6A">Unsplash</a>
+            </p>
+        </div>
+        <img src="./ruben-valenzuela-6-KGYUuvc6A-unsplash.jpg" />
+    </div>
+    <div id="content-cont">
+        <div id="info-cont">
+            <p>
+                This is not a real online service! You know you need something like this in your
+                life to help you realise your deepest dreams.<br />
+                Sign up <em>now</em> to get started.
+            </p>
+            <p>
+                You <em>know</em> you want to.
+            </p>
+        </div>
+        <div id="form-cont">
+            <p>Let's do this!</p>
+            <form id="sign-up-form" action="" method="get">
+                <div class="form-row 1">
+                    <div class="form-field">
+                        <label for="fname">First name</label>
+                        <input id="fname" type="text" name="first_name" required/><span></span>
+                    </div>
+                    <div class="form-field">
+                        <label for="lname">Last name</label>
+                        <input id="lname" type="text" name="last_name" required/>
+                    </div>
+                </div>
+                <div class="form-row 2">
+                    <div class="form-field">
+                        <label for="mail">Email</label>
+                        <input id="mail" type="email" name="mail" required/>
+                    </div>
+                    <div class="form-field">
+                        <label for="phone">Phone number</label>
+                        <input id="phone" type="tel" name="phone_number" required/>
+                    </div>
+                </div>
+                <div class="form-row 3">
+                    <div class="form-field">
+                        <label for="passwd">Password</label>
+                        <input id="passwd" type="password" name="password" required/>
+                    </div>
+                    <div class="form-field">
+                        <label for="cpasswd">Confirm Password</label>
+                        <input id="cpasswd" type="password" name="cpasswd" required/>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div id="submit">
+            <button type="submit" form="sign-up-form">Create Account</button>
+            <p>
+                Have you got an account already? <a href="#">Log in</a>
+            </p>
+        </div>
+    </div>
 </body>
 </html>
