@@ -98,6 +98,10 @@ body {
     border: 1px solid #ad0104;
 }
 
+.form-field input.error {
+    background-color: #ad010433;
+}
+
 #submit {
     flex: 0.2;
 }

@@ -11,7 +11,11 @@ function setValidity() {
         this.reportValidity();
         [passwdA, passwdB].map(x => x.className = "error")
     }
-    else { [passwdA, passwdB].map(x => x.setCustomValidity("")) }
+    else {
+        [passwdA, passwdB].map(x => {
+        x.setCustomValidity("");
+        x.classList.remove("error");})
+    }
 }
 
 function arePasswdsEqual() {
